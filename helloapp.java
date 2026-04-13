@@ -1,12 +1,16 @@
+
 public class helloapp {
 
     public static void main(String[] args) {
-        String name = "ATMAN";
 
-        if(args.length>0){
-            name = args[0];
+        if (args.length > 0) {
+            // Join all arguments with space
+            String name = String.join(" ", args);
+            System.out.println("Hello " + name);
+        } else {
+            System.out.println("Hello User");
         }
-        System.out.println("Hello, " + name + "!");
+
     }
 
 }
